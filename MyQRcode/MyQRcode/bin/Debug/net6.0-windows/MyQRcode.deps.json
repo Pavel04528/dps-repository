@@ -11,8 +11,8 @@
           "AForge": "2.2.5",
           "AForge.Video": "2.2.5",
           "AForge.Video.DirectShow": "2.2.5",
-          "ZXing.Net.Bindings.Windows.Compatibility": "0.16.12",
-          "Zen.Barcode.Rendering.Framework": "3.1.10729.1"
+          "QRCoder": "1.5.1",
+          "ZXing.Net.Bindings.Windows.Compatibility": "0.16.12"
         },
         "runtime": {
           "MyQRcode.dll": {}
@@ -64,6 +64,17 @@
           }
         }
       },
+      "QRCoder/1.5.1": {
+        "dependencies": {
+          "System.Drawing.Common": "7.0.0"
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/QRCoder.dll": {
+            "assemblyVersion": "1.5.1.0",
+            "fileVersion": "1.5.1.0"
+          }
+        }
+      },
       "System.Drawing.Common/7.0.0": {
         "dependencies": {
           "Microsoft.Win32.SystemEvents": "7.0.0"
@@ -80,14 +91,6 @@
             "assetType": "runtime",
             "assemblyVersion": "7.0.0.0",
             "fileVersion": "7.0.22.51805"
-          }
-        }
-      },
-      "Zen.Barcode.Rendering.Framework/3.1.10729.1": {
-        "runtime": {
-          "lib/Zen.Barcode.Core.dll": {
-            "assemblyVersion": "3.1.0.0",
-            "fileVersion": "3.1.10729.65535"
           }
         }
       },
@@ -147,19 +150,19 @@
       "path": "microsoft.win32.systemevents/7.0.0",
       "hashPath": "microsoft.win32.systemevents.7.0.0.nupkg.sha512"
     },
+    "QRCoder/1.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+v8VntytuDw4R1nCNJkSA7SWSizJoQfiByV1+nUjOwrDZEuaxefG73aKuuQjpaGtoZ7qlXpRbK70C23m1h3WLw==",
+      "path": "qrcoder/1.5.1",
+      "hashPath": "qrcoder.1.5.1.nupkg.sha512"
+    },
     "System.Drawing.Common/7.0.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-KIX+oBU38pxkKPxvLcLfIkOV5Ien8ReN78wro7OF5/erwcmortzeFx+iBswlh2Vz6gVne0khocQudGwaO1Ey6A==",
       "path": "system.drawing.common/7.0.0",
       "hashPath": "system.drawing.common.7.0.0.nupkg.sha512"
-    },
-    "Zen.Barcode.Rendering.Framework/3.1.10729.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-84Oi15A4V8eOY7BA51iLhbThxB/bGSxNS0baxbWfhpBcZoF5NBRR4QHrEbDg2VoPI+s2DA82qaO1Z2/TMDo7sg==",
-      "path": "zen.barcode.rendering.framework/3.1.10729.1",
-      "hashPath": "zen.barcode.rendering.framework.3.1.10729.1.nupkg.sha512"
     },
     "ZXing.Net/0.16.9": {
       "type": "package",

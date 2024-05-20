@@ -4,7 +4,6 @@ C:\Users\dps04\Desktop\MyQRcode\MyQRcode\bin\Debug\net6.0-windows\MyQRcode.runti
 C:\Users\dps04\Desktop\MyQRcode\MyQRcode\bin\Debug\net6.0-windows\MyQRcode.dll
 C:\Users\dps04\Desktop\MyQRcode\MyQRcode\bin\Debug\net6.0-windows\MyQRcode.pdb
 C:\Users\dps04\Desktop\MyQRcode\MyQRcode\obj\Debug\net6.0-windows\MyQRcode.csproj.AssemblyReference.cache
-C:\Users\dps04\Desktop\MyQRcode\MyQRcode\obj\Debug\net6.0-windows\MyQRcode.Form1.resources
 C:\Users\dps04\Desktop\MyQRcode\MyQRcode\obj\Debug\net6.0-windows\MyQRcode.Generate_QR.resources
 C:\Users\dps04\Desktop\MyQRcode\MyQRcode\obj\Debug\net6.0-windows\MyQRcode.Scan_QR.resources
 C:\Users\dps04\Desktop\MyQRcode\MyQRcode\obj\Debug\net6.0-windows\MyQRcode.csproj.GenerateResource.cache
@@ -22,10 +21,11 @@ C:\Users\dps04\Desktop\MyQRcode\MyQRcode\bin\Debug\net6.0-windows\AForge.Video.d
 C:\Users\dps04\Desktop\MyQRcode\MyQRcode\bin\Debug\net6.0-windows\AForge.Video.DirectShow.dll
 C:\Users\dps04\Desktop\MyQRcode\MyQRcode\obj\Debug\net6.0-windows\MyQRcode.csproj.CopyComplete
 C:\Users\dps04\Desktop\MyQRcode\MyQRcode\obj\Debug\net6.0-windows\MyQRcode.Properties.Resources.resources
-C:\Users\dps04\Desktop\MyQRcode\MyQRcode\bin\Debug\net6.0-windows\Zen.Barcode.Core.dll
 C:\Users\dps04\Desktop\MyQRcode\MyQRcode\bin\Debug\net6.0-windows\Microsoft.Win32.SystemEvents.dll
 C:\Users\dps04\Desktop\MyQRcode\MyQRcode\bin\Debug\net6.0-windows\System.Drawing.Common.dll
 C:\Users\dps04\Desktop\MyQRcode\MyQRcode\bin\Debug\net6.0-windows\zxing.dll
 C:\Users\dps04\Desktop\MyQRcode\MyQRcode\bin\Debug\net6.0-windows\ZXing.Windows.Compatibility.dll
 C:\Users\dps04\Desktop\MyQRcode\MyQRcode\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\dps04\Desktop\MyQRcode\MyQRcode\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\dps04\Desktop\MyQRcode\MyQRcode\bin\Debug\net6.0-windows\QRCoder.dll
+C:\Users\dps04\Desktop\MyQRcode\MyQRcode\obj\Debug\net6.0-windows\MyQRcode.Main_Form.resources

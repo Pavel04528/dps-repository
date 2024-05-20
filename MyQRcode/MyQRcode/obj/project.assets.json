@@ -57,6 +57,18 @@
           }
         }
       },
+      "QRCoder/1.5.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Drawing.Common": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0-windows7.0/QRCoder.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/QRCoder.dll": {}
+        }
+      },
       "System.Drawing.Common/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -80,15 +92,6 @@
             "assetType": "runtime",
             "rid": "win"
           }
-        }
-      },
-      "Zen.Barcode.Rendering.Framework/3.1.10729.1": {
-        "type": "package",
-        "compile": {
-          "lib/Zen.Barcode.Core.dll": {}
-        },
-        "runtime": {
-          "lib/Zen.Barcode.Core.dll": {}
         }
       },
       "ZXing.Net/0.16.9": {
@@ -194,6 +197,27 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "QRCoder/1.5.1": {
+      "sha512": "+v8VntytuDw4R1nCNJkSA7SWSizJoQfiByV1+nUjOwrDZEuaxefG73aKuuQjpaGtoZ7qlXpRbK70C23m1h3WLw==",
+      "type": "package",
+      "path": "qrcoder/1.5.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/QRCoder.dll",
+        "lib/net40/QRCoder.dll",
+        "lib/net5.0-windows7.0/QRCoder.dll",
+        "lib/net5.0/QRCoder.dll",
+        "lib/net6.0-windows7.0/QRCoder.dll",
+        "lib/net6.0/QRCoder.dll",
+        "lib/netstandard1.3/QRCoder.dll",
+        "lib/netstandard2.0/QRCoder.dll",
+        "nuget-icon.png",
+        "nuget-readme.md",
+        "qrcoder.1.5.1.nupkg.sha512",
+        "qrcoder.nuspec"
+      ]
+    },
     "System.Drawing.Common/7.0.0": {
       "sha512": "KIX+oBU38pxkKPxvLcLfIkOV5Ien8ReN78wro7OF5/erwcmortzeFx+iBswlh2Vz6gVne0khocQudGwaO1Ey6A==",
       "type": "package",
@@ -229,23 +253,6 @@
         "system.drawing.common.7.0.0.nupkg.sha512",
         "system.drawing.common.nuspec",
         "useSharedDesignerContext.txt"
-      ]
-    },
-    "Zen.Barcode.Rendering.Framework/3.1.10729.1": {
-      "sha512": "84Oi15A4V8eOY7BA51iLhbThxB/bGSxNS0baxbWfhpBcZoF5NBRR4QHrEbDg2VoPI+s2DA82qaO1Z2/TMDo7sg==",
-      "type": "package",
-      "path": "zen.barcode.rendering.framework/3.1.10729.1",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.txt",
-        "lib/Zen.Barcode.Core.dll",
-        "tools/BarcodeRender.exe",
-        "tools/BarcodeRender.exe.config",
-        "tools/Zen.Barcode.Core.dll",
-        "zen.barcode.rendering.framework.3.1.10729.1.nupkg.sha512",
-        "zen.barcode.rendering.framework.nuspec"
       ]
     },
     "ZXing.Net/0.16.9": {
@@ -365,8 +372,8 @@
       "AForge >= 2.2.5",
       "AForge.Video >= 2.2.5",
       "AForge.Video.DirectShow >= 2.2.5",
-      "ZXing.Net.Bindings.Windows.Compatibility >= 0.16.12",
-      "Zen.Barcode.Rendering.Framework >= 3.1.10729.1"
+      "QRCoder >= 1.5.1",
+      "ZXing.Net.Bindings.Windows.Compatibility >= 0.16.12"
     ]
   },
   "packageFolders": {
@@ -420,13 +427,13 @@
             "target": "Package",
             "version": "[2.2.5, )"
           },
+          "QRCoder": {
+            "target": "Package",
+            "version": "[1.5.1, )"
+          },
           "ZXing.Net.Bindings.Windows.Compatibility": {
             "target": "Package",
             "version": "[0.16.12, )"
-          },
-          "Zen.Barcode.Rendering.Framework": {
-            "target": "Package",
-            "version": "[3.1.10729.1, )"
           }
         },
         "imports": [
@@ -479,16 +486,6 @@
       "warningLevel": 1,
       "message": "Пакет \"AForge.Video.DirectShow 2.2.5\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net6.0-windows7.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
       "libraryId": "AForge.Video.DirectShow",
-      "targetGraphs": [
-        "net6.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Пакет \"Zen.Barcode.Rendering.Framework 3.1.10729.1\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net6.0-windows7.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
-      "libraryId": "Zen.Barcode.Rendering.Framework",
       "targetGraphs": [
         "net6.0-windows7.0"
       ]

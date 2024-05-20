@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using QRCoder;
+
 namespace MyQRcode
 {
     public partial class Generate_QR : Form
@@ -31,19 +33,20 @@ namespace MyQRcode
 
         private void btn_generate_Click(object sender, EventArgs e)
         {
-            /*
             QRCodeGenerator qr = new QRCodeGenerator();
-            QRCodeData data = qr.CreateQrCode(text_QR.Text);
-            */
-            Zen.Barcode.CodeQrBarcodeDraw dr = Zen.Barcode.BarcodeDrawFactory.CodeQr;
-            gen_pic.Image = dr.Draw(text_QR.Text, 500);
+            var qr_data = qr.CreateQrCode(text_QR.Text, QRCodeGenerator.ECCLevel.L);
+            var data = new QRCode(qr_data);
+            gen_pic.Image = data.GetGraphic(5);           
         }
 
         private void btn_save_Click(object sender, EventArgs e)
         {
-            SaveFileDialog dig = new SaveFileDialog();
-            dig.ShowDialog();
-            gen_pic.Image.Save(dig.FileName+".jpeg");
+            SaveFileDialog save = new SaveFileDialog();
+            save.Filter = "PNG|*.png|JPEG|*.jpg|GIF|*.gif|BMP|*.bmp";
+            if (save.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                gen_pic.Image.Save(save.FileName);
+            }
         }
     }
 }

@@ -41,21 +41,21 @@
             this.gen_pic.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.gen_pic.Location = new System.Drawing.Point(22, 12);
             this.gen_pic.Name = "gen_pic";
-            this.gen_pic.Size = new System.Drawing.Size(200, 200);
+            this.gen_pic.Size = new System.Drawing.Size(400, 400);
             this.gen_pic.TabIndex = 3;
             this.gen_pic.TabStop = false;
             // 
             // text_QR
             // 
-            this.text_QR.Location = new System.Drawing.Point(22, 242);
+            this.text_QR.Location = new System.Drawing.Point(477, 95);
             this.text_QR.Multiline = true;
             this.text_QR.Name = "text_QR";
-            this.text_QR.Size = new System.Drawing.Size(200, 100);
+            this.text_QR.Size = new System.Drawing.Size(350, 100);
             this.text_QR.TabIndex = 5;
             // 
             // btn_generate
             // 
-            this.btn_generate.Location = new System.Drawing.Point(12, 376);
+            this.btn_generate.Location = new System.Drawing.Point(477, 66);
             this.btn_generate.Name = "btn_generate";
             this.btn_generate.Size = new System.Drawing.Size(75, 23);
             this.btn_generate.TabIndex = 6;
@@ -65,7 +65,7 @@
             // 
             // btn_save
             // 
-            this.btn_save.Location = new System.Drawing.Point(147, 376);
+            this.btn_save.Location = new System.Drawing.Point(752, 66);
             this.btn_save.Name = "btn_save";
             this.btn_save.Size = new System.Drawing.Size(75, 23);
             this.btn_save.TabIndex = 7;
@@ -77,7 +77,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(234, 411);
+            this.ClientSize = new System.Drawing.Size(838, 425);
             this.Controls.Add(this.btn_save);
             this.Controls.Add(this.btn_generate);
             this.Controls.Add(this.text_QR);

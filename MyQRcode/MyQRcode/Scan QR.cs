@@ -28,8 +28,9 @@ namespace MyQRcode
 
         private void Scan_QR_FormClosing(object sender, FormClosingEventArgs e)
         {
-            //if (Final_Frame.IsRunning) { Final_Frame.Stop(); }
-            Final_Frame.Stop();
+            if (Final_Frame.IsRunning) { Final_Frame.Stop(); }
+            //Final_Frame.Stop();
+            /*
             try
             {
                 Final_Frame.Stop();
@@ -45,7 +46,8 @@ namespace MyQRcode
 
                 f_main.Show();
             }
-            /*
+            */
+            
             Form f_main = Application.OpenForms[0];
 
             f_main.StartPosition = FormStartPosition.Manual;
@@ -54,7 +56,7 @@ namespace MyQRcode
             f_main.Top = this.Top;
 
             f_main.Show();
-            */
+            
         }
 
         private void Scan_QR_Load(object sender, EventArgs e)
@@ -66,17 +68,13 @@ namespace MyQRcode
             }
 
             box_cam.SelectedIndex = 0;
-            Final_Frame = new VideoCaptureDevice();
         }
 
         private void btn_start_Click(object sender, EventArgs e)
         {
             Final_Frame = new VideoCaptureDevice(CaptureDevice[box_cam.SelectedIndex].MonikerString);
-
-            
             Final_Frame.NewFrame += new NewFrameEventHandler(NewFinalFrame);
             Final_Frame.Start();
-            
         }
 
         private void NewFinalFrame(object sender, NewFrameEventArgs eventArgs)
@@ -88,18 +86,22 @@ namespace MyQRcode
         {
             BarcodeReader reader = new BarcodeReader();
             Result result = reader.Decode((Bitmap)scan_pic.Image);
-
-            try
+            
+            if(result != null)
             {
-                string decoded = result.ToString().Trim();
-                if (decoded != "")
+                try
                 {
-                    text_QR.Text = decoded;
+                    string decoded = result.ToString();
+                    if (decoded != "")
+                    {
+                        text_QR.Text = decoded;
+                        timer1.Stop();
+                    }
                 }
-            }
-            catch(Exception ex)
-            {
-
+                catch (Exception ex)
+                {
+                    
+                }
             }
         }
 

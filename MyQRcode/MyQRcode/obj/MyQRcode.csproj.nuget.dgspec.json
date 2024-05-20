@@ -52,13 +52,13 @@
               "target": "Package",
               "version": "[2.2.5, )"
             },
+            "QRCoder": {
+              "target": "Package",
+              "version": "[1.5.1, )"
+            },
             "ZXing.Net.Bindings.Windows.Compatibility": {
               "target": "Package",
               "version": "[0.16.12, )"
-            },
-            "Zen.Barcode.Rendering.Framework": {
-              "target": "Package",
-              "version": "[3.1.10729.1, )"
             }
           },
           "imports": [
